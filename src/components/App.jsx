@@ -10,13 +10,10 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const handleLeaveFeedback = feedbackType => {
+  const handleLeaveFeedback = () => {
     setGood(prevGood => prevGood + 1);
     setNeutral(prevNeutral => prevNeutral + 1);
     setBad(prevBad => prevBad + 1);
-    // this.setState(prevState => ({
-    //   [feedbackType]: prevState[feedbackType] + 1,
-    // }));
   };
   const total = good + neutral + bad;
   return (

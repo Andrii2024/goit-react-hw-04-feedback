@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledButton, StyledWrapper } from './FeedbackApp.styled.js';
+import { StyledButton, StyledWrapper } from './FeedbackApp.styled';
 
 const FeedbackApp = ({ onLeaveFeedback }) => (
   <StyledWrapper>
